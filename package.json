@@ -10,6 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "script":{
+    "build":"vite build"
+  },
   "dependencies": {
     "fs": "^0.0.1-security",
     "react": "^19.2.0",
