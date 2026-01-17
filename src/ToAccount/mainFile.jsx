@@ -76,8 +76,7 @@ useEffect(()=>{
 
 //sendMsg
 let senMSSG = (e)=>{
-  if(!chatWho){alert("Please Select A person to Chat with")
-    return} 
+  
   if(!currMsg){return} 
   //setcurrMsg(e.target.value)
   const messageObj = {
