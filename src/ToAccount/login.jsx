@@ -31,7 +31,7 @@ const logInNow =async(e)=>{
          console.log('Seeeend')
    
     const res = await fetch(
-        "http://192.168.230.173:3002/loginin",{
+        "https://bacend-haua.onrender.com/loginin",{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"
