@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Css.css"
 import ws from './socket'
 import { BrowserRouter, Routes, Link, Route, useNavigate} from 'react-router-dom'
-import { error } from 'three'
+//import { error } from 'three'
 
 export default function SignIn(){
 let [uName,setuName] =useState('')
