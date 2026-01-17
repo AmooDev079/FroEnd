@@ -1,0 +1,265 @@
+body{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+     align-items: center;
+    
+}
+.body{
+    background: linear-gradient(to top,black, transparent);
+    align-items: center;
+    
+    width: 60vw;height: 90vh;
+    top: -40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+
+
+
+#sel{
+    background: rgb(10, 10, 10);
+    color: aqua;
+    font-size: large;
+    text-align: center;
+    border: none;
+}
+
+.title{
+    color: aqua;
+    margin: 0;
+    top: 0;
+    align-self: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.chatwith{
+    margin: 0;
+
+color: rgb(16, 145, 250); align-self: center;
+font-style: italic;
+letter-spacing: 1px;
+}
+.msgArea{
+     align-self: center;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    height: 100%;
+    border-radius: 20px;
+    width: 50vw;
+    border: 1px solid rgb(54, 53, 51);
+    box-shadow: 2px 2px 30px rgb(83, 79, 79),
+    -2px -2px 40px rgb(70, 66, 66);
+    flex-direction: column;
+    overflow:scroll;
+}
+.msgArea .left{
+    position: relative;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 0px;
+    border: 3px solid rgb(41, 173, 100);
+    border-radius: 25px 25px 25px 0px;
+   background: transparent;
+    max-width: 70%;
+    min-width: 100px;
+
+}
+.msgArea .right{
+   background: transparent;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+
+    position: relative;
+    align-self: flex-end;
+    height: fit-content;
+    max-width: 70%;
+    border: 3px solid white;
+    border-radius: 25px 25px 0px 25px;
+  
+}
+#sen{
+    position: relative;
+    width: 50%;
+    align-self: flex-end;
+    height: 60vh;
+    margin: 10px;
+}
+#rec{
+    position: relative;
+    margin: 10px;
+    align-self: flex-start;
+    width: 50%;
+        height: 60vh;
+}
+.msgArea::-webkit-scrollbar{
+    display: none;
+}
+.typedMsg::-webkit-scrollbar{
+    display: none;
+}
+.msgArea div .msg{
+    position: relative;
+    max-width: 95%;
+    margin: 2px;
+    line-height: 2.4rem;
+    line-height: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 3.5vw;
+  word-wrap: break-word;
+    letter-spacing: 1.5px;
+    color: rgb(6, 255, 243);
+}
+.send{
+    height: 80px;
+    position: relative;
+   bottom: -10px;
+    width: 50vw;
+    display: flex;
+    
+justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+
+
+.rgf{
+    display: flex;
+    position: relative;
+    min-width: 20vw;
+    max-width: 20vw;
+    flex-direction: column;
+}
+.msgArea div .time{
+    position: absolute;
+    font-size: 13px;
+    
+    color: rgb(219, 216, 216);
+    font-style: italic;
+    right: 5px;
+    bottom: -25px;
+    padding: 5px;
+}
+.msgArea .left .time{
+    left: 5px;
+}
+
+.send .typedMsg{
+    position: relative;
+  min-width: 30vw;
+    padding: 10px;transition: all 0.5s;
+    font-size: 23px;
+    background-color: black;
+    min-height: 80px;
+    word-wrap: break-word;
+    color: aqua;
+    border-radius: 30px;
+    letter-spacing: 0.2rem;
+  }
+  .typedMsg:focus{
+    box-shadow: 2px 2px 20px rgb(84, 84, 88),
+    inset 2px 2px 20px rgb(60, 60, 63);
+  }
+.rgf .picToSend{
+    position: relative;
+   max-width: 20vw;
+   min-width: 10vw;
+    
+   
+    background:transparent;
+}
+.rgf button{
+    position: relative;
+    top: 15px;
+    transition: all 0.5s;
+    left: 10px;
+    align-self: flex-start;
+    padding: 10px;
+    height: 100%;
+   min-width: 15vw;
+    font-size: 30px;
+    background-color: rgb(80, 78, 78);
+    border-radius: 30px;
+}
+.rgf button:hover{
+    color: black;
+    background: rgb(151, 142, 142);
+}
+
+
+@media  (min-width:700px) {
+.msgArea div .msg{
+    font-size: 1.5vw;
+}
+
+
+
+}
+
+
+@media  (max-width:800px) {
+.send .typedMsg{
+    width: 70vw;
+}
+.send{
+    width: 90vw;
+}
+    .msgArea{
+    width: 90vw;
+}
+}
+
+
+/* @media screen and (max-width:500px) {
+    .body{
+    background: linear-gradient(to top,black, transparent);
+   margin: 0;
+    width: 100vw;height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .send .typedMsg{
+    min-width: 60vw;
+    padding: 10px;
+    font-size: 23px;
+    background-color: black;
+    min-height: 80px;
+    color: aqua;
+    border-radius: 30px;
+    letter-spacing: 0.2rem;
+}
+.rgf .picToSend{
+    position: relative;
+    min-width:  17vw;
+
+    
+    background:transparent;
+}
+.rgf button{
+    position: relative;
+    top: 15px;
+    left: 0px;
+    
+    padding: 5px;
+    height: 80%;
+    min-width:  80%;
+    font-size: 20px;
+    background-color: rgb(20, 19, 19);
+    border-radius: 20px;
+}
+} */
