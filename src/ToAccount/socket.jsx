@@ -1,3 +1,3 @@
 import { io } from "socket.io-client";
-let ws = io("http://192.168.230.173:3002")
+let ws = io("https://bacend-haua.onrender.com")
 export default ws
